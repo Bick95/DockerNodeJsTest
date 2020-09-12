@@ -7,6 +7,9 @@ import Error404 from "./views/Error404.js"
 
 console.log("JS loaded");
 
+//const {MongoClient} = require('mongodb');  // Get MongoDB instance
+// Connect to MongoDB
+
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
 const getParams = match => {

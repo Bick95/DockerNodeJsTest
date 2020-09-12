@@ -7,6 +7,8 @@ services:
     build: ./SinglePageApplication
     ports:
       - '5060:5060'
+    volumes:
+      - "./SinglePageApplication:/usr/src/app/"
     links:
       - mongodb
 
