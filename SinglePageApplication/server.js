@@ -1,3 +1,7 @@
+// Largely followed these two tutorials when creating this code: 
+// https://www.youtube.com/watch?v=6BozpmSjk-Y
+// https://www.youtube.com/watch?v=OstALBk-jTc
+
 const express = require("express");
 const path = require("path");
 
