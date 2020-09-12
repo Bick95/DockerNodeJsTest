@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  js_web_server:
+    container_name: js_server_container
+    restart: always
+    build: ./SinglePageApplication
+    ports:
+      - '5060:5060'
+    links:
+      - mongodb
+
+  mongodb:
+    container_name: mongoDB_2
+    image: mongo:latest
+    ports:
+      - '27017:27017'
