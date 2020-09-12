@@ -19,6 +19,7 @@ EXPOSE 5060
 # Start node application (=web server)
 CMD ["node", "server.js"]
 
+# Open terminal in: single_page_application
 # Build: docker build -t docker-spa .
 # Start (without mounting a volume): docker run -it -p 5060:5060 docker-spa:latest
 # Start (mounting volume for hot reload): docker run -it -p 5060:5060 -v $(pwd)/SinglePageApplication/:/usr/src/app/ docker-spa:latest
