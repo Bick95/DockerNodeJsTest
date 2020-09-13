@@ -9,6 +9,11 @@ console.log("JS loaded");
 
 //const {MongoClient} = require('mongodb');  // Get MongoDB instance
 // Connect to MongoDB
+//const connectDB = require("./../../src/connection");
+
+/*connectDB().then(() => {
+    console.log("Database connected.");
+});*/
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
